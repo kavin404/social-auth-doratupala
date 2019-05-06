@@ -1,0 +1,48 @@
+$primary: #328CC1;
+$secondary: #0B3C5D;
+$main: #f89406;
+$gold: #D9B310;
+$light-grey: #efefef;
+$grey: darken($light-grey, 30%);
+$black: #1D2731;
+
+.container {
+    height: 100vh;
+    padding-top: 0;
+    a {
+        margin-top: 1.5em;
+        color: $secondary;
+    }
+}
+
+h3 {
+    color: $secondary;
+    margin-bottom: 1em;
+}
+
+.form-wrapper {
+    // min-width: 80%;
+}
+
+
+.google {
+    width: 2.5em;
+    margin-right: 1.5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+.mat-btn  {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.btn-login {
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+mat-form-field {
+    font-size: .8em;
+    width: 100%;
+}

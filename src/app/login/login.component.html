@@ -1,0 +1,23 @@
+<div class="container  d-flex justify-content-center align-items-center" >
+  <div class="form-wrapper text-center col-lg-4 col-md-5">
+    <h3>Doratupala</h3>
+    <form [formGroup]="loginForm" (submit)="submit()" novalidate>
+      <mat-form-field appearance="outline">
+        <!-- <mat-label>Password</mat-label> -->
+        <input matInput type="text" placeholder="Email" formControlName="email" autocomplete="off">
+        <mat-icon matSuffix>email</mat-icon>
+        <!-- <mat-hint>Please enter a valid email</mat-hint> -->
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <!-- <mat-label>Password</mat-label> -->
+        <input matInput type="password" placeholder="Type a password here" formControlName="password">
+        <mat-icon matSuffix>vpn_key</mat-icon>
+        <!-- <mat-hint>Hint</mat-hint> -->
+      </mat-form-field>
+      <button  mat-raised-button color="warn" type="submit" class="mat-btn btn-login">Sign In</button>
+    </form>
+    <button mat-raised-button  class="mat-btn" (click)="googleLogin()"><img class="google" src="https://firebasestorage.googleapis.com/v0/b/yalu-chat.appspot.com/o/google.jpg?alt=media&token=b6448bee-6887-4da8-9b4e-70789fe483f6">Sign in with Google</button>
+    <small><a [routerLink]="['/free-dating-site-in-sri-lanka/signup']">Need an account?</a></small>
+  </div>
+
+</div>
